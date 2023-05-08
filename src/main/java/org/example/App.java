@@ -1,6 +1,7 @@
 package org.example;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 /**
  * Hello world!
@@ -13,7 +14,9 @@ public class App
         System.out.println("----------Starting excecution------------");
         System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
         // Create a new FirefoxDriver instance
-        WebDriver driver = new FirefoxDriver();
+        FirefoxOptions options = new FirefoxOptions();
+        options.setHeadless(true);
+        WebDriver driver = new FirefoxDriver(options);
 
         // Navigate to a web page
         driver.get("https://www.example.com");
