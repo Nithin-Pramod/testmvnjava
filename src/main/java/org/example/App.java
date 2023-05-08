@@ -1,6 +1,7 @@
 package org.example;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 
 /**
@@ -15,7 +16,13 @@ public class App
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 
         // Create a new instance of the ChromeDriver
-        WebDriver driver = new ChromeDriver();
+
+
+        ChromeOptions options = new ChromeOptions();
+
+        options.addArguments("--headless");
+
+        WebDriver driver = new ChromeDriver(options);
 
         // Navigate to the website you want to test
         driver.get("https://www.example.com");
