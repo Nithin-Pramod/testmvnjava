@@ -13,7 +13,7 @@ public class App
     public static void main( String[] args )
     {
         System.out.println("----------Starting excecution------------");
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//usr//local//bin//chromedriver");
 
         // Create a new instance of the ChromeDriver
 
@@ -21,6 +21,7 @@ public class App
         ChromeOptions options = new ChromeOptions();
 
         options.addArguments("--headless");
+        options.addArguments("--remote-allow-origins=*");
 
         WebDriver driver = new ChromeDriver(options);
 
