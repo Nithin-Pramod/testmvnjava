@@ -1,7 +1,7 @@
 package org.example;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 
 /**
  * Hello world!
@@ -12,17 +12,23 @@ public class App
     public static void main( String[] args )
     {
         System.out.println("----------Starting excecution------------");
-        System.setProperty("webdriver.gecko.driver", "/usr/local/bin/geckodriver");
-        // Create a new FirefoxDriver instance
-        FirefoxOptions options = new FirefoxOptions();
-        options.setHeadless(true);
-        WebDriver driver = new FirefoxDriver(options);
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
-        // Navigate to a web page
+        // Create a new instance of the ChromeDriver
+        WebDriver driver = new ChromeDriver();
+
+        // Navigate to the website you want to test
         driver.get("https://www.example.com");
 
-        // Print page title
-        System.out.println("Page title is: " + driver.getTitle());
+        // Verify that the page title is correct
+        String expectedTitle = "Example Domain";
+        String actualTitle = driver.getTitle();
+
+        if (expectedTitle.equals(actualTitle)) {
+            System.out.println("Page title is correct");
+        } else {
+            System.out.println("Page title is incorrect");
+        }
 
         // Close the browser
         driver.quit();
