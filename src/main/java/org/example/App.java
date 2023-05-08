@@ -22,6 +22,7 @@ public class App
 
         options.addArguments("--headless");
         options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--whitelisted-ips=\"\"");
 
         WebDriver driver = new ChromeDriver(options);
 
