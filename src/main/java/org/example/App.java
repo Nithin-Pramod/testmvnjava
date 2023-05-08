@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
         System.out.println("----------Starting excecution------------");
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 
         // Create a new instance of the ChromeDriver
         WebDriver driver = new ChromeDriver();
