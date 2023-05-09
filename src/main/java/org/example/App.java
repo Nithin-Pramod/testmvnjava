@@ -54,8 +54,11 @@ public class App
         while (activeCount > 0) {
             try {
                 Thread.sleep(100);
+                group.destroy();
+
             } catch (InterruptedException e) {
                 // ignore
+                group.destroy();
             }
             activeCount = group.activeCount();
         }
