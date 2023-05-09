@@ -53,6 +53,7 @@ public class App
         int activeCount = group.activeCount();
         while (activeCount > 0) {
 
+            System.exit(0);
             return;
 //            try {
 //                System.out.println("inside try");
