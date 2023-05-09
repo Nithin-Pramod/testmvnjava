@@ -4,24 +4,25 @@ sudo apt-get install -y default-jdk
 
 sudo apt install -y maven
 
-sudo apt-get install -y xvfb
-
-sudo apt-get install -y firefox
-
-Xvfb :99 -ac &
-
-export DISPLAY=:99
-
-firefox --version
+sudo apt-get install unzip
 
 
-wget https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-linux64.tar.gz
+wget https://chromedriver.storage.googleapis.com/113.0.5672.63/chromedriver_linux64.zip
 
-tar -xvf geckodriver-v0.33.0-linux-aarch64.tar.gz
+unzip chromedriver_linux64.zip
 
-sudo mv geckodriver /usr/local/bin/
+sudo mv chromedriver /usr/local/bin/
 
-sudo apt-get install -y xdg-utils
+sudo apt-get install -y libappindicator1 fonts-liberation
+
+sudo apt-get install -f
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+
+sudo dpkg -i google-chrome*.deb
+
+google-chrome-stable -version
 
 cd testmvnjava
 
