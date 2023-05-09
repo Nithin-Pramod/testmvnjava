@@ -23,7 +23,11 @@ sudo mv geckodriver /usr/local/bin/
 
 sudo apt-get install -y xdg-utils
 
-sudo mvn exec:java -Dexec.mainClass="org.example.App"
+cd testmvnjava
+
+mvn clean install
+
+mvn exec:java -Dexec.mainClass="org.example.App"
 
  
 

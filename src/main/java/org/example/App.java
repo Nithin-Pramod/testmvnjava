@@ -16,6 +16,7 @@ public class App
         System.setProperty("webdriver.chrome.driver", "//usr//local//bin//chromedriver");
 
         // Create a new instance of the ChromeDriver
+        String chrome_driver_binary = "/usr/local/bin/chromedriver";
 
 
         ChromeOptions options = new ChromeOptions();
