@@ -22,6 +22,10 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 sudo dpkg -i google-chrome*.deb
 
+sudo apt-get install -y libgbm-dev
+
+sudo apt --fix-broken -y install
+
 google-chrome-stable -version
 
 cd testmvnjava

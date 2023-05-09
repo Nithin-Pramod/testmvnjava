@@ -44,5 +44,23 @@ public class App
         driver.quit();
         System.out.println("----------Ending excecution------------");
 
+
+        ThreadGroup group = Thread.currentThread().getThreadGroup();
+        while (group.getParent() != null) {
+            group = group.getParent();
+        }
+
+        int activeCount = group.activeCount();
+        while (activeCount > 0) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                // ignore
+            }
+            activeCount = group.activeCount();
+        }
+
+        group.destroy();
+
     }
 }
