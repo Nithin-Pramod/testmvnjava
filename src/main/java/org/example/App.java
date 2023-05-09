@@ -35,6 +35,7 @@ public class App
         String actualTitle = driver.getTitle();
 
         if (expectedTitle.equals(actualTitle)) {
+            System.out.println("title of page is --- "+actualTitle);
             System.out.println("Page title is correct");
         } else {
             System.out.println("Page title is incorrect");
