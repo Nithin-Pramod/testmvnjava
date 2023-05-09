@@ -52,18 +52,23 @@ public class App
 
         int activeCount = group.activeCount();
         while (activeCount > 0) {
-            try {
-                System.out.println("inside try");
 
-                Thread.sleep(100);
-                group.destroy();
+            return;
+//            try {
+//                System.out.println("inside try");
 
-            } catch (InterruptedException e) {
-                // ignore
-                System.out.println("in catch block");
-                group.destroy();
-            }
-            activeCount = group.activeCount();
+
+
+//                Thread.sleep(100);
+//                group.destroy();
+
+//            }
+//            catch (InterruptedException e) {
+//                // ignore
+//                System.out.println("in catch block");
+//                group.destroy();
+//            }
+//            activeCount = group.activeCount();
         }
         System.out.println("outside while");
         group.destroy();
