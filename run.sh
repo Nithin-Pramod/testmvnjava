@@ -11,6 +11,10 @@ echo "------------------Done excecution----------------------"
 
 sudo apt install -y nodejs
 
+sudo DEBIAN_FRONTEND=noninteractive apt-get dist-upgrade -y
+
+sudo apt-get remove needrestart
+
 DEBIAN_FRONTEND=noninteractive sudo apt install npm -y
 
  
