@@ -8,6 +8,11 @@ mvn exec:java -Dexec.mainClass="org.example.App"
 
 echo "------------------Done excecution----------------------"
 
+
+sudo apt install -y nodejs
+
+echo -e '\n' | sudo apt install -y npm
+
  
 
 
