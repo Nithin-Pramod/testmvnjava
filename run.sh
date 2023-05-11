@@ -13,7 +13,7 @@ sudo apt install -y nodejs
 
 sudo DEBIAN_FRONTEND=noninteractive apt-get dist-upgrade -y
 
-sudo apt-get remove needrestart
+sudo apt-get remove needrestart -y
 
 DEBIAN_FRONTEND=noninteractive sudo apt install npm -y
 
