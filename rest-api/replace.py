@@ -22,6 +22,8 @@ for item in collection['item']:
     
     # Update the request with the new URL
     item['request']['url']['raw'] = new_base_url
+    
+    item['request']['url']['host'] = list(new_url.split("."))
 
 # Save the updated collection to a new JSON file
 with open('rest-endpoints-new.json', 'w') as f:
