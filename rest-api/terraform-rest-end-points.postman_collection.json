@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "96fd96f3-26e9-45f0-8c59-83730e55baa8",
+		"name": "terraform-rest-end-points",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21264192"
+	},
+	"item": [
+		{
+			"name": "/greet/Monil",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://my-ec2spring-lb-1131837988.us-east-1.elb.amazonaws.com/greet/Monil",
+					"protocol": "http",
+					"host": [
+						"my-ec2spring-lb-1131837988",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"greet",
+						"Monil"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employee/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://my-ec2spring-lb-1131837988.us-east-1.elb.amazonaws.com/employee/1",
+					"protocol": "http",
+					"host": [
+						"my-ec2spring-lb-1131837988",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"employee",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://my-ec2spring-lb-1131837988.us-east-1.elb.amazonaws.com/employees",
+					"protocol": "http",
+					"host": [
+						"my-ec2spring-lb-1131837988",
+						"us-east-1",
+						"elb",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/covid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ec2-3-83-46-71.compute-1.amazonaws.com:8080/covid",
+					"protocol": "http",
+					"host": [
+						"ec2-3-83-46-71",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						"covid"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
