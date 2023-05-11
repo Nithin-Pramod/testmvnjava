@@ -11,7 +11,7 @@ echo "------------------Done excecution----------------------"
 
 sudo apt install -y nodejs
 
-echo -e '\n' | sudo apt install -y npm
+DEBIAN_FRONTEND=noninteractive sudo apt install npm
 
  
 
