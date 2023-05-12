@@ -80,7 +80,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://ec2-3-83-46-71.compute-1.amazonaws.com:8080/covid",
+					"raw": "http://ec2-3-83-46-71.compute-1.amazonaws.com/covid",
 					"protocol": "http",
 					"host": [
 						"ec2-3-83-46-71",
@@ -88,7 +88,6 @@
 						"amazonaws",
 						"com"
 					],
-					"port": "8080",
 					"path": [
 						"covid"
 					]
